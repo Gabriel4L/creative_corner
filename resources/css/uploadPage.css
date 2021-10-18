@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	min-height: 100vh;
+	background-color: #fff;
+}
+.navbar{
+	background-color: #4F72F2;
+}
+.navbar-brand img{
+	width: 80%;
+}
+.search-box{
+	width: 897px;
+	height: 50px;
+	background-color: white;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #445EF2;
+}
+.search-box > i{
+	font-size: 20px;
+	color: #777;
+}
+.search-box > input{
+	flex:1;
+	height: 40px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding-left: 10px;
+}
+/*Isi Container*/
+.welcome h3{
+	font-size: 48px;
+}
+.welcome p{
+	font-size: 18px;
+}
+.banner img{
+	width: 100%;
+}
+.col{
+	font-size: 24px;
+}
+.col-3{
+	border-radius: 5px;
+	min-width: 30%;
+}
+.col-3 span{
+	font-size: 20px;
+}
+.desc{
+	background-color: #4F72F2;
+	border-radius: 20px;
+	padding: 2%;
+}
+.small-profile img{
+	border-radius: 100%;
+	width: 16%;
+	margin-right: 5%;
+}
+.topmenu img{
+	border-radius: 100%;
+	width: 3%;
+	height: 3%;
+}
+.welcome-club h5{
+	margin-top: 15%;
+	color: #131073;
+	font-size: 28px;
+}
+.welcome-club h1{
+	font-family: 'Baskervville', serif;
+	font-size: 144px;
+}
+.welcome-club h3{
+	font-family: 'Baskervville', serif;
+	font-size: 96px;
+	margin-top: -2%;
+}
+.welcome-img img{
+	width: 545px;
+	height: 548px;
+}
+.col-3 h6{
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: -1%;
+}
+.tulisan p{
+	font-size: 18px;
+}
+.box1{
+	color: #4A5CAC;
+	background-color: #CDD4FF;
+	padding-top: 1%;
+}
+.box2{
+	color: #D6B15E;
+	background-color: #F9F9D2;
+	padding-top: 1%;
+}
+.box3{
+	color: #7F5B97;
+	background-color: #EBE7F1;
+	padding-top: 1%;
+}
+.your-uploads p{
+	margin-bottom: -8%;
+	font-size: 24px;
+	color: #131073;
+}
+.upload-button{
+	background-color: #445EF2;
+	color: #ffffff;
+	font-size: 18px;
+}
+hr{
+	width: 100%;
+	color: #4149F2;
+	border: 1px solid;
+}
+.buttons img{
+	width: 8%;
+	cursor: pointer;
+}
+.buttons{
+	position: relative;
+	z-index: 1;
+	bottom: 82%;
+	left: 4%;
+}
+
+/*Responsive Breakpoints*/
+@media (max-width: 768px){
+	.projects .col-sm-6 .card {
+		width: 100%;
+	}
+	.card{
+		margin-bottom: 10%;
+	}
+}
