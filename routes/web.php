@@ -5,6 +5,7 @@ use App\Http\Controllers\ClubController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\SignupController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -35,6 +36,10 @@ Route::get('/login', [LoginController::class, 'index'])->name('login')->middlewa
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
+Route::get('/profile',[ProfileController::class, 'index'])->middleware('auth');
+Route::get('/profile/edit/{id}', [ProfileController::class, 'edit'])->middleware('auth');
+Route::get('/profile/{id}', [ProfileController::class, 'show'])->middleware('auth');
+Route::post('/profile/{id}', [ProfileController::class, 'update'])->middleware('auth');
 
 Route::get('/signup',[SignupController::class, 'index'])->middleware('guest');
 Route::post('/register',[SignupController::class, 'store']);
