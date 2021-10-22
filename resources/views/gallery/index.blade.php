@@ -184,14 +184,15 @@ hr{
       </div>
 
       <hr class="hr-uploads">
-
+      @foreach ($posts as $p)
+        
       <div class="row justify-content-between projects">
         <div class="col-lg-3 col-sm-6 mb-3">
           <div class="card">
-            <img src="img/lisa.jpg" class="card-img-top">
+            <img src="img/{{ $p->file }}" class="card-img-top">
             <div class="card-body">
               <p class="card-text">
-                <h6 class="text-center mb-3">Lisa of Blackpink</h6>
+                <h6 class="text-center mb-3">{{ $p->title }}</h6>
                 <div class="small-profile d-flex">
                   <img src="img/profile.jpg">
                   <div>
@@ -207,8 +208,9 @@ hr{
               <img src="img/close-button.png" style="margin-bottom: 2%;">
               <br>
               <img src="img/edit-button.png">
+            </div>
           </div>
-        </div>
+          @endforeach
 
         <div class="col-lg-3 col-sm-6 mb-3">
           <div class="card">

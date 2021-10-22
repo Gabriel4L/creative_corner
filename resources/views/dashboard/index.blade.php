@@ -100,13 +100,15 @@
     <section id="projek">
         <div class="container mt-4">
             <div class="row" style="padding-left:60px;width:100%">
+                @foreach ($posts as $p)
+                    
                 <div class="col-md-4 mb-4">
                     <div class="card" style="width: 20rem;border-radius: 20px;">
-                        <img src="img/lisa.jpg" class="card-img-top" style="border-radius: 20px 20px 0 0 ;">
+                        <img src="img/{{ $p->file }}" class="card-img-top" style="border-radius: 20px 20px 0 0 ;">
                         <div class="card-body"
-                            style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);background: #FFFFFF;border-radius: 20px;">
-                            <p class="card-text">
-                            <h6 class="text-center mb-3 fw-bold">Lisa of Blackpink</h6>
+                        style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);background: #FFFFFF;border-radius: 20px;">
+                        <p class="card-text">
+                            <h6 class="text-center mb-3 fw-bold">{{ $p->title }}</h6>
                             <div class="small-profile d-flex">
                                 <img src="img/profile.jpg">
                                 <div>
@@ -115,105 +117,12 @@
                                     <span>ayamgoreng@gmail.com</span>
                                 </div>
                             </div>
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 20rem;border-radius: 20px;">
-                        <img src="img/lisa.jpg" class="card-img-top" style="border-radius: 20px 20px 0 0 ;">
-                        <div class="card-body"
-                            style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);background: #FFFFFF;border-radius: 20px;">
-                            <p class="card-text">
-                            <h6 class="text-center mb-3 fw-bold">Lisa of Blackpink</h6>
-                            <div class="small-profile d-flex">
-                                <img src="img/profile.jpg">
-                                <div>
-                                    <span>Ayam goreng</span>
-                                    <br>
-                                    <span>ayamgoreng@gmail.com</span>
-                                </div>
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 20rem;border-radius: 20px;">
-                        <img src="img/lisa.jpg" class="card-img-top" style="border-radius: 20px 20px 0 0 ;">
-                        <div class="card-body"
-                            style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);background: #FFFFFF;border-radius: 20px;">
-                            <p class="card-text">
-                            <h6 class="text-center mb-3 fw-bold">Lisa of Blackpink</h6>
-                            <div class="small-profile d-flex">
-                                <img src="img/profile.jpg">
-                                <div>
-                                    <span>Ayam goreng</span>
-                                    <br>
-                                    <span>ayamgoreng@gmail.com</span>
-                                </div>
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 20rem;border-radius: 20px;">
-                        <img src="img/lisa.jpg" class="card-img-top" style="border-radius: 20px 20px 0 0 ;">
-                        <div class="card-body"
-                            style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);background: #FFFFFF;border-radius: 20px;">
-                            <p class="card-text">
-                            <h6 class="text-center mb-3 fw-bold">Lisa of Blackpink</h6>
-                            <div class="small-profile d-flex">
-                                <img src="img/profile.jpg">
-                                <div>
-                                    <span>Ayam goreng</span>
-                                    <br>
-                                    <span>ayamgoreng@gmail.com</span>
-                                </div>
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 20rem;border-radius: 20px;">
-                        <img src="img/lisa.jpg" class="card-img-top" style="border-radius: 20px 20px 0 0 ;">
-                        <div class="card-body"
-                            style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);background: #FFFFFF;border-radius: 20px;">
-                            <p class="card-text">
-                            <h6 class="text-center mb-3 fw-bold">Lisa of Blackpink</h6>
-                            <div class="small-profile d-flex">
-                                <img src="img/profile.jpg">
-                                <div>
-                                    <span>Ayam goreng</span>
-                                    <br>
-                                    <span>ayamgoreng@gmail.com</span>
-                                </div>
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 20rem;border-radius: 20px;">
-                        <img src="img/lisa.jpg" class="card-img-top" style="border-radius: 20px 20px 0 0 ;">
-                        <div class="card-body"
-                            style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);background: #FFFFFF;border-radius: 20px;">
-                            <p class="card-text">
-                            <h6 class="text-center mb-3 fw-bold">Lisa of Blackpink</h6>
-                            <div class="small-profile d-flex">
-                                <img src="img/profile.jpg">
-                                <div>
-                                    <span>Ayam goreng</span>
-                                    <br>
-                                    <span>ayamgoreng@gmail.com</span>
-                                </div>
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            @endforeach
+                
             </div>
         </div>
     </section>

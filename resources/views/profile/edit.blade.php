@@ -35,7 +35,6 @@
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    background-image: url(../img/stella.jpeg);
     background-size: contain;
 }
 .change{
@@ -79,6 +78,7 @@
                     <div class="circle2 mx-auto p-2">
                         <div class="circle3 mx-auto p-2">
                             <div class="circle4 mx-auto">
+                                <img src="img/{{ $u->foto_profile }}" alt="pp" width="100%" class="rounded-circle">
                             </div>
                         </div>
                     </div>
