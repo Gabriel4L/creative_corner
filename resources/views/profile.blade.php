@@ -63,7 +63,7 @@
         <div class="container-fluid">
             <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/dashboard" style="color: #445EF2;"> <i class="bi bi-chevron-left"></i> Profile</a>
+                <a class="nav-link active" aria-current="page" href="/index" style="color: #445EF2;"> <i class="bi bi-chevron-left"></i> Profile</a>
               </li>
             </ul>
           </div>

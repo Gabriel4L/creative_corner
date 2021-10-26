@@ -13,6 +13,6 @@ class DashboardController extends Controller
     {
         $posts = posts::paginate(6);
         // $posts = DB::table('posts')->get();
-        return view('dashboard.index',compact('posts'));
+        return view('index',compact('posts'));
     }
 }

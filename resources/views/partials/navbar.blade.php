@@ -11,7 +11,7 @@
                 <div class="collapse navbar-collapse mx-3" id="navbarsMenu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/dashboard">Home</a>
+                            <a class="nav-link" href="/index">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

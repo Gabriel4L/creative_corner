@@ -44,7 +44,7 @@ Route::post('/profile/{id}', [ProfileController::class, 'update'])->middleware('
 Route::get('/signup',[SignupController::class, 'index'])->middleware('guest');
 Route::post('/register',[SignupController::class, 'store']);
 
-Route::get('/dashboard',[DashboardController::class, 'index'])->middleware('auth');
+Route::get('/index',[DashboardController::class, 'index'])->middleware('auth');
 
 Route::get('/gallery',[PostsController::class, 'index'])->middleware('auth');
 Route::post('/gallery/store', [PostsController::class, 'store']);
@@ -52,3 +52,9 @@ Route::post('/gallery/store', [PostsController::class, 'store']);
 Route::get('/club',[ClubController::class, 'index'])->middleware('auth');
 Route::get('/club/web-design',[ClubController::class, 'index2'])->middleware('auth');
 Route::get('/club/video-editing',[ClubController::class, 'index3'])->middleware('auth');
+
+Route::get('/detail/{id}',[PostsController::class, 'index2'])->middleware('auth');
+Route::get('/gallery/hapus/{id}',[PostsController::class, 'destroy'])->middleware('auth');
+Route::get('/gallery/edit/{id}',[PostsController::class, 'edit'])->middleware('auth');
+Route::post('/gallery/{id}', [PostsController::class, 'update'])->middleware('auth');
+Route::get('/gallery/{id}', [PostsController::class, 'show'])->middleware('auth');

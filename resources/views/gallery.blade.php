@@ -184,12 +184,13 @@ hr{
       </div>
 
       <hr class="hr-uploads">
-      @foreach ($posts as $p)
-        
+      
       <div class="row justify-content-between projects">
+        @foreach ($posts as $p)
         <div class="col-lg-3 col-sm-6 mb-3">
           <div class="card">
-            <img src="img/{{ $p->file }}" class="card-img-top">
+            <a href="/detail/{{ $p->id }}">
+            <img src="img/{{ $p->file }}" class="card-img-top"></a>
             <div class="card-body">
               <p class="card-text">
                 <h6 class="text-center mb-3">{{ $p->title }}</h6>
@@ -205,133 +206,16 @@ hr{
             </div>
           </div>
           <div class="buttons">
+            <a href="/gallery/hapus/{{ $p->id }}">
               <img src="img/close-button.png" style="margin-bottom: 2%;">
+            </a>
               <br>
+            <a href="/gallery/edit/{{ $p->id }}">
               <img src="img/edit-button.png">
+            </a>
             </div>
           </div>
           @endforeach
-
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <div class="card">
-            <img src="img/lisa.jpg" class="card-img-top">
-            <div class="card-body">
-              <p class="card-text">
-                <h6 class="text-center mb-3">Lisa of Blackpink</h6>
-                <div class="small-profile d-flex">
-                  <img src="img/profile.jpg">
-                  <div>
-                    <span>Ayam goreng</span>
-                    <br>
-                    <span>ayamgoreng@gmail.com</span>
-                  </div>
-                </div>
-              </p>
-            </div>
-          </div>
-          <div class="buttons">
-              <img src="img/close-button.png" style="margin-bottom: 2%;">
-              <br>
-              <img src="img/edit-button.png">
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <div class="card">
-            <img src="img/lisa.jpg" class="card-img-top">
-            <div class="card-body">
-              <p class="card-text">
-                <h6 class="text-center mb-3">Lisa of Blackpink</h6>
-                <div class="small-profile d-flex">
-                  <img src="img/profile.jpg">
-                  <div>
-                    <span>Ayam goreng</span>
-                    <br>
-                    <span>ayamgoreng@gmail.com</span>
-                  </div>
-                </div>
-              </p>
-            </div>
-          </div>
-          <div class="buttons">
-              <img src="img/close-button.png" style="margin-bottom: 2%;">
-              <br>
-              <img src="img/edit-button.png">
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-between projects">
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <div class="card">
-            <img src="img/lisa.jpg" class="card-img-top">
-            <div class="card-body">
-              <p class="card-text">
-                <h6 class="text-center mb-3">Lisa of Blackpink</h6>
-                <div class="small-profile d-flex">
-                  <img src="img/profile.jpg">
-                  <div>
-                    <span>Ayam goreng</span>
-                    <br>
-                    <span>ayamgoreng@gmail.com</span>
-                  </div>
-                </div>
-              </p>
-            </div>
-          </div>
-          <div class="buttons">
-              <img src="img/close-button.png" style="margin-bottom: 2%;">
-              <br>
-              <img src="img/edit-button.png">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <div class="card">
-            <img src="img/lisa.jpg" class="card-img-top">
-            <div class="card-body">
-              <p class="card-text">
-                <h6 class="text-center mb-3">Lisa of Blackpink</h6>
-                <div class="small-profile d-flex">
-                  <img src="img/profile.jpg">
-                  <div>
-                    <span>Ayam goreng</span>
-                    <br>
-                    <span>ayamgoreng@gmail.com</span>
-                  </div>
-                </div>
-              </p>
-            </div>
-          </div>
-          <div class="buttons">
-              <img src="img/close-button.png" style="margin-bottom: 2%;">
-              <br>
-              <img src="img/edit-button.png">
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <div class="card">
-            <img src="img/lisa.jpg" class="card-img-top">
-            <div class="card-body">
-              <p class="card-text">
-                <h6 class="text-center mb-3">Lisa of Blackpink</h6>
-                <div class="small-profile d-flex">
-                  <img src="img/profile.jpg">
-                  <div>
-                    <span>Ayam goreng</span>
-                    <br>
-                    <span>ayamgoreng@gmail.com</span>
-                  </div>
-                </div>
-              </p>
-            </div>
-          </div>
-          <div class="buttons">
-              <img src="img/close-button.png" style="margin-bottom: 2%;">
-              <br>
-              <img src="img/edit-button.png">
-          </div>
-        </div>
-      </div>
-    <!-- End Your Uploads -->
 
     <!-- Modal Pop Up -->
     <div class="modal" id="myModal">
@@ -366,7 +250,6 @@ hr{
       </div>
     </div>
     <!-- End Modal Pop Up -->
-
 
   </section>
 

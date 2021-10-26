@@ -11,7 +11,7 @@ class ProfileController extends Controller
     public function index()
     {
         $users = DB::table('users')->get();
-        return view('profile.index',['users'=>$users]);
+        return view('profile',['users'=>$users]);
     }
     public function edit($id)
     {
