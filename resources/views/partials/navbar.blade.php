@@ -22,10 +22,10 @@
                                 <li><a class="dropdown-item" href="/club"><i class="bi bi-brush"></i> Design
                                         Graphic
                                     </a></li>
-                                <li><a class="dropdown-item" href="/club/web-design"> <i class="bi bi-laptop"></i> Web
+                                <li><a class="dropdown-item" href="/club2"> <i class="bi bi-laptop"></i> Web
                                         Design
                                     </a></li>
-                                <li><a class="dropdown-item" href="/club/video-editing"><i class="bi bi-camera-video"></i>
+                                <li><a class="dropdown-item" href="/club3"><i class="bi bi-camera-video"></i>
                                         Video Editing
                                     </a></li>
                             </ul>
